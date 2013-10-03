@@ -67,6 +67,7 @@ print((a and b) or (not c) and not (d or e or f))
 
 ###
 ### Micah, Jason, Alex 
-###
+### Websites:
+#  http://www.dreamincode.net/forums/topic/182253-import-another-py-file/
 
 # ... List your collaborators here, as a comment (on a line starting with "#").
