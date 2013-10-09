@@ -1,5 +1,5 @@
-# Name: ...
-# Evergreen Login: ...
+# Name: Cardin Nguyen (Trong)
+# Evergreen Login: ngutro25
 # Computer Science Foundations
 # Programming as a Way of Life
 # Homework 2
@@ -14,12 +14,24 @@
 ### Problem 1
 ###
 
+
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 1 solution follows:"
 
 # ... write your code and comments here (and remove this line)
+# x = 1 + 2 + 3 + . . . + 100
 
+import math
+from hw2_test import n
 
+x = 0
+result =0
+while (x < n):
+    x = x+1
+    result = result + x
+
+print ("The Total of of 1 to 100 is: " +str(result)) 
+    
 ###
 ### Problem 2
 ###
@@ -28,6 +40,14 @@ print "Problem 1 solution follows:"
 print "Problem 2 solution follows:"
 
 # ... write your code and comments here (and remove this line)
+
+
+b = 1
+a = 0
+
+for a in range(2, 11):
+    a = (b)/float(a)
+    print(a)
 
 
 ###
@@ -72,6 +92,8 @@ print "Problem 6 solution follows:"
 
 # ... List your collaborators and other sources of help here (websites, books, etc.),
 # ... as a comment (on a line starting with "#").
+# https://wiki.python.org/moin/ForLoop
+
 
 ###
 ### Reflection
