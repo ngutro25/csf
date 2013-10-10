@@ -30,7 +30,7 @@ result =0
 
 #start while statements
 
-while (x != n):
+while (x < n):
     x = x+1
     result = result + x
 
@@ -64,8 +64,12 @@ print "Problem 3 solution follows:"
 
 n = 10
 triangular = 0
-for i in range:
-    triangular = ...
+
+for i in range(n+1):
+# add i to triangular looping n times.
+    triangular = triangular + i
+
+# Printing the answer    
 print "Triangular number", n, "via loop:", triangular
 print "Triangular number", n, "via formula:", n*(n+1)/2
 
@@ -76,7 +80,17 @@ print "Triangular number", n, "via formula:", n*(n+1)/2
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 4 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+#Variables for P4
+n = 10
+result = 0
+#for looping using range n viarable
+for i in range(n):
+    #n looping to get result
+    result = result * i
+
+#print result
+print "The Factorial of", n, "is = ", result
+    
 
 ###
 ### Problem 5
