@@ -1,0 +1,9 @@
+Grader Name: Nicholas Mendelson
+Evergreen Login: mennic31
+Date 10/10/2013
+
+Grade 3/3
+
++comments above blocks of code, good layout
++descriptive names for values (rootadd rootsubt)
++strings writen in the output help explaine what each value repersents (The add-quadratic, A = true instead of just saying true.)
