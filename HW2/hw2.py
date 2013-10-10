@@ -18,19 +18,37 @@
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 1 solution follows:"
 
-# ... write your code and comments here (and remove this line)
 # x = 1 + 2 + 3 + . . . + 100
 
 import math
-from hw2_test import n
 
+
+# import hw2test & define variables
+from hw2_test import n
 x = 0
 result =0
-while (x < n):
+
+#start while statements
+def 
+while (x != n):
     x = x+1
     result = result + x
 
-print ("The Total of of 1 to 100 is: " +str(result)) 
+print ("Example 1: The Total of of 1 to 100 is: " +str(result)) 
+    
+    
+    
+   
+    
+# SECOND EXAMPLE
+
+
+print ("Example 2: The Total of of 1 to 100 is: " +str(result2))     
+
+    
+    
+    
+    
     
 ###
 ### Problem 2
@@ -42,11 +60,11 @@ print "Problem 2 solution follows:"
 # ... write your code and comments here (and remove this line)
 
 
-b = 1
-a = 0
+b = 1.0
+a = 0.0
 
 for a in range(2, 11):
-    a = (b)/float(a)
+    a = (b)/a
     print(a)
 
 
@@ -98,6 +116,8 @@ print "Problem 6 solution follows:"
 ###
 ### Reflection
 ###
+# what took me long was the decimal places. I didn't know that by adding .0 will give you decimal places
+# or you can use the float function as well. All the looping function can be found in chapter 7.
 
 # ... Write how long this assignment took you, including doing all the readings
 # ... and tutorials linked to from the homework page. Did the readings, tutorials,
