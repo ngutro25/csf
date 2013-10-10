@@ -29,25 +29,12 @@ x = 0
 result =0
 
 #start while statements
-def 
+
 while (x != n):
     x = x+1
     result = result + x
 
 print ("Example 1: The Total of of 1 to 100 is: " +str(result)) 
-    
-    
-    
-   
-    
-# SECOND EXAMPLE
-
-
-print ("Example 2: The Total of of 1 to 100 is: " +str(result2))     
-
-    
-    
-    
     
     
 ###
@@ -75,7 +62,12 @@ for a in range(2, 11):
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 3 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+n = 10
+triangular = 0
+for i in range:
+    triangular = ...
+print "Triangular number", n, "via loop:", triangular
+print "Triangular number", n, "via formula:", n*(n+1)/2
 
 ###
 ### Problem 4
