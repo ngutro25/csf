@@ -67,7 +67,7 @@ triangular = 0
 
 for i in range(n+1):
 # add i to triangular looping n times.
-    triangular = triangular + i
+    triangular += i
 
 # Printing the answer    
 print "Triangular number", n, "via loop:", triangular
@@ -81,17 +81,29 @@ print "Triangular number", n, "via formula:", n*(n+1)/2
 print "Problem 4 solution follows:"
 
 #Variables for P4
-n = 10
-result = 0
+# result must be viariable 1 and not 0 because of mutiplication rule
+result = 1
+
 #for looping using range n viarable
 for i in range(n):
-    #n looping to get result
-    result = result * i
+    #i looping plus 1
+    result *= i+1
 
 #print result
 print "The Factorial of", n, "is = ", result
     
+#Example 2
+#defining a function
 
+def factorial(n):
+    fac = 1
+    for i in range(n):
+        #takes previous i to get fac and loops
+        fac *= i+1
+    return fac
+
+#print result
+print "The factorial function is:", factorial(n)
 ###
 ### Problem 5
 ###
@@ -99,7 +111,22 @@ print "The Factorial of", n, "is = ", result
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 5 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+
+#variables
+n = 10
+fac=1
+for i in range(n):
+    #reset fact to 1 after n - previous n
+    fac=1
+    # Takes n minus the remaining [i] in range
+    x = n-i 
+    # new if in rage of x 9 8 7 6 5 4 3 2 1
+    for j in range(x):
+         #takes remaining j in x range multiply it
+         fac= fac*(j+1) 
+    #print fac after each loop
+    print fac
+    
 
 ###
 ### Problem 6
@@ -108,15 +135,33 @@ print "Problem 5 solution follows:"
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 6 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+#variables
+n = 10
+fac=1
+fac2 = 1
+for i in range(n):
+
+    #add previous fact to new one
+    fac2 = fac2 + (1/fac)
+    #reset fact to 1 after n - previous n
+    fac=1
+    # Takes n minus the remaining [i] in range
+    x = n-i 
+    # new if in rage of x 9 8 7 6 5 4 3 2 1
+    for j in range(x):
+         #takes remaining j in x range multiply it
+         fac= fac*(j+1)/1.0
+    #print fac after each loop
+    print fac2
 
 ###
-### Collaboration
+### 
 ###
 
 # ... List your collaborators and other sources of help here (websites, books, etc.),
 # ... as a comment (on a line starting with "#").
 # https://wiki.python.org/moin/ForLoop
+# Chapter 7 and 10 helped a bit.
 
 
 ###
@@ -124,7 +169,12 @@ print "Problem 6 solution follows:"
 ###
 # what took me long was the decimal places. I didn't know that by adding .0 will give you decimal places
 # or you can use the float function as well. All the looping function can be found in chapter 7.
+# It took me 2-3 hours figuring out the order of python. Most of the examples we got in class was short and easy.
+# These problems too longer to do since it require some backtrack reading. There wasn't any tutorials links at homepage
+# that I find useful. Most of it was through classmates examples they got so far then fiddling around with it. 
+# Everything in this assignment is in the lecture which is why its easy to understand. What took long was learning to
+# be neat with codes.
 
-# ... Write how long this assignment took you, including doing all the readings
+
 # ... and tutorials linked to from the homework page. Did the readings, tutorials,
 # ... and lecture contain everything you needed to complete this assignment?
