@@ -19,15 +19,30 @@ Problem 1:
 
 Problem 2:
 
-...
+GC-content: 0.43029262963
 
 Problem 3:
 
-...
+Our variables that we need for the function is no longer define. Therefore it gives you the error
+lenenum is not define.
+
+When I comment out gc_count = 0 it would give me gc_count not defined error as well. gc_count is a define variable that counts up the total. 
+therefore its a must to give it a variable 0 since we want the total count. 
 
 Problem 4:
 
-...
+What I did was pretty much duplicate the loop that is already there. It feels too easy in this lab on purpose or I'm doing this wrong.
+
+
+D:\Users\Cardin\Documents\GitHub\csf\HW3>python dna_analysis.py data\sam
+stq
+GC-content: 0.43029262963
+AT-content: 0.568993851852
+
+
+
+
+
 
 Collaboration:
 
@@ -35,4 +50,5 @@ Collaboration:
 
 Reflection:
 
-...
+I gotta learn how to read more carefully instead of looking at the size of the content
+Thought this lab was harder then it looks. 

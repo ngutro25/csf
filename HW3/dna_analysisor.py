@@ -1,5 +1,5 @@
-# Name: Cardin Nguyen (aka Trong)
-# Evergreen Login: Ngutro25
+# Name: ...
+# Evergreen Login: ...
 # Computer Science Foundations
 # Programming as a Way of Life
 # Homework 3: DNA analysis (Part 1)
@@ -50,54 +50,24 @@ for line in inputfile:
 ###
 
 # Total nucleotides seen so far.
-totalgc_count = 0
-totalat_count = 0
+total_count = 0
 # Number of G and C nucleotides seen so far.
 gc_count = 0
-at_count = 0
-
-## other variables
-
-#g_count = 0
-#c_count = 0
-#a_count = 0
-#t_count = 0
-#sum_count = 0
-#total_count = 0 - already included in top 
-#seg_length = 0
-#atgc_ratio = 0
-#gc_classification = 0
 
 
 # for each base pair in the string,
 for bp in seq:
     # increment the total number of bps we've seen
-    totalgc_count = totalgc_count + 1
+    total_count = total_count + 1
 
     # next, if the bp is a G or a C,
     if bp == 'C' or bp == 'G':
         # increment the count of gc
         gc_count = gc_count + 1
-		
-		
-		
-		
-# for each base pair in the string,
-for at in seq:
-    # increment the total number of ATs we've seen
-    totalat_count = totalat_count + 1
 
-    # next, if the bp is a A or a T,
-    if at == 'A' or at == 'T':
-        # increment the count of AT
-        at_count = at_count + 1
-	
 
 # divide the gc_count by the total_count
-gc_content = float(gc_count) / totalgc_count
-at_content = float(at_count) / totalat_count
+gc_content = float(gc_count) / total_count
 
 # Print the answer
 print 'GC-content:', gc_content
-print 'AT-content:', at_content
-
