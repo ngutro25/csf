@@ -2,7 +2,7 @@
 # Evergreen Login: Ngutro25
 # Computer Science Foundations
 # Programming as a Way of Life
-# Homework 3: DNA analysis (Part 1)
+# Homework 4: DNA analysis 
 
 # This program reads DNA sequencer output and computes statistics, such as
 # the GC content.  Run it from the command line like this:
@@ -51,22 +51,15 @@ for line in inputfile:
 
 # Total nucleotides seen so far.
 total_count = 0
-#totalat_count = 0
-# Number of G and C nucleotides seen so far.
 gc_count = 0
 at_count = 0
+g_count = 0
+c_count = 0
+a_count = 0
+t_count = 0
 
-## other variables
 
-#g_count = 0
-#c_count = 0
-#a_count = 0
-#t_count = 0
-#sum_count = 0
-#total_count = 0 - already included in top 
-#seg_length = 0
-#atgc_ratio = 0
-#gc_classification = 0
+
 
 
 # for each base pair in the string,
@@ -78,20 +71,27 @@ for bp in seq:
     if bp == 'C' or bp == 'G':
         # increment the count of gc
         gc_count = gc_count + 1
-		
-		
-		
-		
-# for each base pair in the string,
-for at in seq:
-    # increment the total number of ATs we've seen
-    total_count = total_count + 1
-
-    # next, if the bp is a A or a T,
-    if at == 'A' or at == 'T':
-        # increment the count of AT
+    if bp == 'A' or bp == 'T':
         at_count = at_count + 1
-	
+    if bp == 'G':
+        g_count = g_count + 1
+    if bp == 'C':
+        c_count = c_count + 1
+    if bp == 'A':
+        a_count = a_count + 1
+    if bp == 'T':
+        t_count = t_count + 1
+        
+        
+        
+def bps(x)
+    if bp == "X
+    x = x + 1
+    return x
+    
+
+        
+thesum = a_count + c_count + g_count + t_count
 
 # divide the gc_count by the total_count
 gc_content = float(gc_count) / total_count
@@ -100,4 +100,11 @@ at_content = float(at_count) / total_count
 # Print the answer
 print 'GC-content:', gc_content
 print 'AT-content:', at_content
+print 'G: ', g_count
+print 'C: ', c_count
+print 'A: ', a_count
+print 'T: ', t_count
+print 'Sum:', thesum
+print 'Total Count:', total_count
+
 

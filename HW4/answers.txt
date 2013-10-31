@@ -1,0 +1,29 @@
+Name: Trong
+Evergreen Login: Ngutro25
+Computer Science Foundations
+Programming as a Way of Life
+Fall 2013
+Homework 4
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+At the end, you will turn in this file along with your modified
+dna_analysis.py program.
+
+
+Problem 5:
+
+
+
+
+
+
+
+Collaboration:
+
+
+
+Reflection:
+

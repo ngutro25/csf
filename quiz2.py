@@ -8,3 +8,5 @@ if (n < 50):
     print 'n is less then 50'
 else:
     print 'n is equal to 50'
+  
+  
