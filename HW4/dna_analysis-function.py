@@ -59,25 +59,25 @@ a_count = 0
 t_count = 0
 invalidcount = 0
 
-
+bp = 'A'
 ### Got bored want to change this to function and see if it works
 ### but cant get it to work then Alex came over and said we are not suppose
 ### to change it to a function.
-#def bps(n)
-#    if bp == 'n'
-#    n = n + 1
-#    return n
+def bps(x):
+    for bp in seq:
+            x += 1
+    return x
 
 
-#g_count  = bps(g)
+g_count  = bps(bp == 't')
 #c_count  = bps(c)
 #a_count  = bps(a)
 #t_count  = bps(t)
 
 # for each base pair in the string,
 for bp in seq:
-    # increment the total number of bps we've seen
-    total_count = total_count + 1
+#    # increment the total number of bps we've seen
+#    total_count = total_count + 1
     # next, if the bp is a G or a C,
     if bp == 'G':
         g_count += 1
@@ -90,39 +90,42 @@ for bp in seq:
     else:
         invalidcount += 1
         
+        
+#thesum = a_count + c_count + g_count + t_count
+
     
         
 
 
 # reduced a few lines by moving gc_content. G+C and A+T is the same as GC and AT alone
-gc_content = float(g_count+c_count) / total_count
-at_content = float(a_count+t_count) / total_count
+#gc_content = float(g_count+c_count) / total_count
+#at_content = float(a_count+t_count) / total_count
 
 # GC/AT Ratio using the counts 
 ## Float give decimals. Without it it doesnt. I forgot about this.
 ## too many hours
-gcat_ratio = float(g_count+c_count) / (a_count+t_count)
+#gcat_ratio = float(g_count+c_count) / (a_count+t_count)
 
 # Calculate if high, low , or moderate using else if statements.
-if gc_content >= 0.6:
-	gclowhigh = 'High GC content'
-elif gc_content < 0.4:
-	gclowhigh = 'Low GC content'
-else:
-	gclowhigh = 'Moderate GC content'
+#if gc_content >= 0.6:
+#	gclowhigh = 'High GC content'
+#elif gc_content < 0.4:
+#	gclowhigh = 'Low GC content'
+#else:
+#	gclowhigh = 'Moderate GC content'
 
 # Print the answer
-print 'GC-content:', gc_content
-print 'AT-content:', at_content
+#print 'GC-content:', gc_content
+#print 'AT-content:', at_content
 print 'G: ', g_count
-print 'C: ', c_count
-print 'A: ', a_count
-print 'T: ', t_count
-print 'Sum:', (a_count + c_count + g_count + t_count)
-print 'Invalid Count:', invalidcount
-print 'Total Count (sum & invalids):', total_count
-print 'AT-GC Ratio:', gcat_ratio
-print 'Seg Length', len(seq)
-print 'GC Classification: ', gclowhigh
+#print 'C: ', c_count
+#print 'A: ', a_count
+#print 'T: ', t_count
+#print 'Sum:', thesum
+#print 'Invalid Count:', invalidcount
+#print 'Total Count (sum & invalids):', total_count
+#print 'AT-GC Ratio:', gcat_ratio
+#print 'Seg Length', len(seq)
+#print 'GC Classification: ', gclowhigh
 
 
