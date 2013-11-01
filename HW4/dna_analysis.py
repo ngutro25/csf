@@ -101,7 +101,7 @@ at_content = float(a_count+t_count) / total_count
 # GC/AT Ratio using the counts 
 ## Float give decimals. Without it it doesnt. I forgot about this.
 ## too many hours
-gcat_ratio = float(g_count+c_count) / (a_count+t_count)
+gcat_ratio = float(a_count+t_count) / (g_count+c_count)
 
 # Calculate if high, low , or moderate using else if statements.
 if gc_content >= 0.6:
