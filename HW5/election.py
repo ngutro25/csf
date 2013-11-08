@@ -1,5 +1,5 @@
-# Name: ...
-# Evergreen Login: ...
+# Name: Cardin Nguyen
+# Evergreen Login: NguTro25
 # Programming as a Way of Life
 # Homework 5: Election prediction
 
@@ -35,8 +35,11 @@ def state_edges(election_result_rows):
     The input list does has no duplicate states;
     that is, each state is represented at most once in the input list.
     """
-    #TODO: Implement this function
-    pass
+
+    results = election_result_rows
+    for state in results:
+        edge = row_to_edge(election_result_rows)
+        return {election_result_rows[0]["State"]:edge}
 
 
 ################################################################################

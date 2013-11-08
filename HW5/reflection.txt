@@ -1,6 +1,6 @@
-Name: ...
-UW NetID: ...
-CSE 140
+Name: Cardin Nguyen
+TSEC NetID: ngutro25
+CSF
 Homework 3: Election prediction
 
 
