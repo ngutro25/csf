@@ -2,6 +2,11 @@
 # Evergreen Login: NguTro25
 # Programming as a Way of Life
 # Homework 5: Election prediction
+#Cheat Sheet
+
+
+
+
 
 import csv
 import os
@@ -36,10 +41,13 @@ def state_edges(election_result_rows):
     that is, each state is represented at most once in the input list.
     """
 
-    results = election_result_rows
-    for state in results:
-        edge = row_to_edge(election_result_rows)
-        return {election_result_rows[0]["State"]:edge}
+#dic 
+    edge = {}
+    
+    for x in election_result_rows:
+        state = (x['State'])
+        edge[state] = row_to_edge(x)
+    return edge
 
 
 ################################################################################

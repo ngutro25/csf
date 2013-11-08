@@ -1,0 +1,15 @@
+#Tuples = unchange lists
+
+#List - same as tuples but changeable.
+#   ex: cats = ['Tom', 'Snappy', 'Kitty', 'Jessie', 'Chester']
+#   print cats[2]
+#   cats.append('Catherine')
+   
+#   Usage: [ ]
+   
+#Dictionary
+#phonebook = {'Andrew Parson':8806336, \
+#'Emily Everett':6784346, 'Peter Power':7658344, \
+#'Lewis Lame':1122345}
+
+#del phonebook['Andrew Parson']
