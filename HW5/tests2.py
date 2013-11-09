@@ -8,7 +8,7 @@
 
 # The "from election import *" statement loads all the functions defined in
 # election.py into the current environment.
-from election import *
+from election2 import *
 
 
 def test_read_csv():
