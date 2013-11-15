@@ -1,3 +1,9 @@
+# Name: Cardin Nguyen, Travis Wagner
+# Evergreen Login: ngutro25, wagtra12
+# Computer Science Foundations
+# Programming as a Way of Life
+# Homework 6
+
 
 #problem 3
 a = 5
@@ -49,37 +55,10 @@ print list_c
     
 #problem 7
 
-#create a dictionary from mother with child using for loop
+#for loop
 
-parent = {}
-
-
-for k in mother:
-    parent = {k:ages}
-    
-    
-print parent
-    
-    
-    
-    
-ages = ('12', '10', '13', '25')
-mother = {'julie':1234, 'jessica':12345, 'monica':0011, 'michelle':911}
-
-
-
-for i in mother:
-    parent = ((zip(mother, ages))
-parent = dict(zip(mother, ages))
-        
-    
-    
-print parent
-
-
-    
-
-        
-        
-
-        
+fruits = ['apple', 'orange',  'pear']
+for fruit in fruits:       
+   print 'Current fruit :', fruit
+  
+ 
