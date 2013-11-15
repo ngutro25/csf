@@ -45,7 +45,7 @@ def state_edges(election_result_rows):
     edge = {}
     
     for x in election_result_rows:
-        state = (x['State'])
+        state = (x["State"])
         edge[state] = row_to_edge(x)
     return edge
 
