@@ -68,6 +68,7 @@ def most_recent_poll_row(poll_rows, pollster, state):
     """
     
     
+    
     most_recent_poll_row = None
     date2 = 'Jan 01 1800'
     for row in poll_rows:
@@ -76,7 +77,6 @@ def most_recent_poll_row(poll_rows, pollster, state):
             most_recent_poll_row = row
             date2 = row['Date']
     return most_recent_poll_row
-        
         
 
 
@@ -90,15 +90,29 @@ def unique_column_values(rows, column_name):
     Given a list of rows and the name of a column (a string), returns a set
     containing all values in that column.
     """
-    #TODO: Implement this function
-    pass
+
+    ucv = []
+    for row in rows:
+        ucv.append(row[column_name])
+    ucv = set(ucv)
+    return ucv
 
 def pollster_predictions(poll_rows):
     """
     Given a list of poll data rows, returns pollster predictions.
     """
     #TODO: Implement this function
-    pass
+
+    prediction = {}
+    pollsters = unique_column_values(poll_rows, 'Pollster')
+    states = unique_column_values(poll_rows, 'State')
+    for pollster in pollsters:
+        prediction[pollster] = {}
+        for state in states:
+            recent = [most_recent_poll_row(poll_rows, pollster, state)]
+            if recent != [None]:      
+                prediction[pollster][state] = state_edges(recent)[state]
+    return prediction
 
             
 ################################################################################
