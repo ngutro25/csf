@@ -1,0 +1,23 @@
+test_diction = {}
+
+test_diction["apple"] = 0.45
+
+test_diction["pear"] = 1.00
+
+test_diction["cherries"] = 2.50
+
+test_diction["pear"]
+
+lista[0]["Ian"]
+
+nested_list = [dictionary, test_diction]
+
+for i in range(len(nest_list)):
+
+print nest_list[i]["Pear"]
+
+empty_list = []
+
+for i in range(1,11):
+
+empty_list.append(square(i))
